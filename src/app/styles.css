@@ -1,0 +1,109 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* สีพื้นหลัง */
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  max-width: 600px; /* ขนาดสูงสุดของหน้า */
+  margin: 20px auto; /* จัดกลาง */
+  padding: 20px;
+  background-color: #fff; /* สีพื้นของกล่อง */
+  border-radius: 8px; /* มุมกลม */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* เงา */
+}
+
+h1 {
+  text-align: center; /* จัดกลางหัวข้อ */
+  color: #333; /* สีของข้อความ */
+}
+
+h2 {
+  margin-top: 20px;
+  color: #666; /* สีข้อความรอง */
+}
+
+.input-field {
+  width: calc(100% - 20px); /* กว้างเต็มที่ โดยมีระยะห่าง */
+  padding: 10px; /* ขนาดการจัด */
+  margin: 5px 0; /* ระยะห่างด้านบนและล่าง */
+  border: 1px solid #ccc; /* เส้นขอบ */
+  border-radius: 4px; /* มุมกลม */
+  font-size: 16px; /* ขนาดฟอนต์ */
+}
+
+.btn {
+  background-color: #28a745; /* สีปุ่ม */
+  color: white; /* สีข้อความ */
+  border: none; /* ไม่มีเส้นขอบ */
+  border-radius: 4px; /* มุมกลม */
+  padding: 10px 15px; /* ขนาดการจัด */
+  cursor: pointer; /* เปลี่ยนเป็นลูกศรชี้เมื่อชี้ไปที่ปุ่ม */
+  transition: background-color 0.3s; /* เอฟเฟกต์การเปลี่ยนสี */
+  margin-right: 10px; /* ระยะห่างด้านขวา */
+}
+
+.btn:hover {
+  background-color: #218838; /* เปลี่ยนสีเมื่อชี้ */
+}
+
+.button-group {
+  display: flex; /* ทำให้ปุ่มอยู่ในแนวเดียวกัน */
+  gap: 10px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+.todo-list {
+  list-style: none; /* ไม่มีจุดหน้า */
+  padding: 0; /* ไม่มีระยะห่าง */
+}
+
+.todo-item {
+  background-color: #f8f9fa; /* สีพื้นหลังของงาน */
+  padding: 15px; /* ขนาดการจัด */
+  margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+  border: 1px solid #ddd; /* เส้นขอบ */
+  border-radius: 5px; /* มุมกลม */
+  transition: transform 0.2s; /* เอฟเฟกต์การเคลื่อนไหว */
+}
+
+.todo-item:hover {
+  transform: scale(1.02); /* ขยายเมื่อชี้ */
+}
+
+.completed {
+  text-decoration: line-through; /* ขีดเส้นกลางที่ตัวหนังสือ */
+  color: gray; /* สีตัวหนังสือเมื่อเสร็จ */
+}
+
+.status-btn {
+  background-color: #007bff; /* สีปุ่มสถานะ */
+}
+
+.delete-btn {
+  background-color: #dc3545; /* สีปุ่มลบ */
+}
+
+.delete-btn:hover, .status-btn:hover {
+  opacity: 0.8; /* ลดความทึบเมื่อชี้ */
+}
+
+/* CSS สำหรับปุ่ม Close */
+.close-btn {
+  background-color: #dc3545; /* สีแดง */
+  color: white; /* สีตัวอักษร */
+  margin-left: 10px; /* ระยะห่างด้านซ้าย */
+}
+
+@media (max-width: 600px) {
+  .input-field {
+    width: 100%; /* ทำให้กว้างเต็มที่ในหน้าจอเล็ก */
+  }
+
+  .btn {
+    width: 100%; /* ทำให้ปุ่มกว้างเต็มที่ในหน้าจอเล็ก */
+    margin-top: 5px; /* ระยะห่างด้านบน */
+  }
+}
