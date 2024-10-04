@@ -1,6 +1,5 @@
 import { connectToDatabase } from "@/lib/mongodb";
 import Todo from "@/models/todo";
-import { NextApiRequest } from "next";
 import { NextRequest, NextResponse } from "next/server";
 
 // url => api/v1/todo/pid
